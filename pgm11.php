@@ -7,18 +7,19 @@
     <title>Document</title>
 </head>
 <center>
+<center>
 <body>
 <form method="post"><br><br>
 	Enter the item Names : <input type="text" name="items" /><br><br>
 	Enter the item price : <input type="text" name="prices" /><br><br>
 	<input type="reset" value="Reset" />
-	<input type="submit" name="submit" value="Submit" /><br><br>
+	<input type="submit" name="submit" value="Submit" />
 </form>
 </body>
 
 <?php
     if (isset($_POST['submit'])){
-      
+      $total=0;
        $data = $_POST['items'];
        $array1 = explode(',',$data);
        $price = $_POST['prices'];
@@ -32,11 +33,16 @@
                "</th><td>".htmlspecialchars($value)."</th></tr>";
         }
         echo '</table>';
+        foreach( $final as  $name => $value){
+           $total = $total + $value;
+          }
+          echo '<br><br>Total amount of item is : <strong>'.$total.'</strong><br>' ;
     }
     $maxIndex = array_search(max($final), $final); 
     echo '<br> Coastliest item is :<strong>'.$maxIndex.'</strong><br>';
     $minIndex = array_search(min($final), $final); 
     echo 'Cheapest item is : <strong>'.$minIndex.'</strong><br>' ;
+    
 ?>
 </center>
 </html>
