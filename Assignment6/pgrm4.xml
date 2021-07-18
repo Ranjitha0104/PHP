@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href="pgrm4.xsl"?>
+<emp>
+<s>
+ <eno> 1001 </eno>
+ <name> 
+	<fname> Ranjitha </fname>
+	<lname> Prabhu </lname>
+	<mname> S</mname>
+ </name>
+ <fathername> Srikanth Prabhu </fathername>
+ <DOB> </DOB>
+ <city> Manipal </city>
+ <state> Karnataka </state>
+ <qualification> BCA </qualification>
+ <salary> 45000 </salary>
+</s>
+
+<s>
+ <eno> 1002 </eno>
+ <name> 
+	<fname> Vaishnavi </fname>
+	<lname> Gill </lname>
+	<mname> Singh </mname>
+ </name>
+ <fathername> Suresh Singh Gill </fathername>
+ <DOB> 18-02-2000 </DOB>
+ <city> Bhopal </city>
+ <state> MP </state>
+ <qualification> MCA </qualification>
+ <salary> 51000 </salary>
+</s>
+
+<s>
+ <eno> 1003 </eno>
+ <name> 
+	<fname> Anya </fname>
+	<lname> Kumar </lname>
+	<mname> V </mname>
+ </name>
+ <fathername> Vijay Kumar </fathername>
+ <DOB> </DOB>
+ <city> Udupi </city>
+ <state> Karnataka </state>
+ <qualification> M.Tech </qualification>
+ <salary> 602000 </salary>
+</s>
+</emp>
+
+
